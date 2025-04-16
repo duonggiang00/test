@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Bài 1 (2 điểm): Viết hàm tạo ra id ngẫu nhiên:</h1>
     <script>
         const listCharacters =
         "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -17,14 +18,15 @@
             }
             
             for(let i = 0 ; i<length;i++){
-                result+=listCharacters[Math.round(Math.random()*listCharacters.length)]
+                result+=listCharacters[Math.floor(Math.random()*listCharacters.length)]
             }
             return result;
             }
             else return `độ dài không hợp lệ`
             
         }
-        console.log(generatorId(10))
+        
+        document.writeln(generatorId(10))
         
     </script>
 </body>

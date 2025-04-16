@@ -6,9 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Bài 4 (2 điểm): Tìm số lớn thứ 2 trong mảng</h1>
     <script>
         let arr=[1,2,3,4,5,6,7,1,2,9,2,6,5]
         function findSecondLargestNumber(arr){
+            
             if(!arr){return`invalid`}
             if(arr.length>1){
                 let max=arr[0];
@@ -25,8 +27,8 @@
             
             
         }
-        console.log(findSecondLargestNumber(arr))
-        console.log(findSecondLargestNumber())
+        document.writeln(`Số thứ 2 lớn nhất trong mảng là: ` + findSecondLargestNumber(arr))
+        
     </script>
     
 </body>
